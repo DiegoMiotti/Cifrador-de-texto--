@@ -1,0 +1,268 @@
+
+.conteiner{
+    background-color: #000000;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    margin-left: 1px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 3px;
+}
+
+h1.typing-titulo {
+  width: 24ch;
+  animation: typing 2s steps(29), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+
+h1.typing-titulo:hover{
+    color: #ff316c;
+}
+
+
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.texto-izquierdo{
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    background-color: #000000;
+    color: red;
+    overflow: hidden;
+}
+
+.texto-a-encriptar{
+    background-color: #000000;
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+.texto-a-encriptar:focus{
+    background-color: #000000;
+}
+
+.texto-derecho{
+    margin-left: 50px;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    background-color: #000000;
+}
+
+textarea#texto.texto-a-encriptar{
+    background-color: #e5e5e5;
+    color: #666666;
+    padding: 1em;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    width: 500px;
+    height: 400px;
+    transition: all 0.2s;
+}
+
+textarea#texto.texto-a-encriptar:hover{
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+textarea#texto.texto-a-encriptar:focus{
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
+}
+
+textarea.texto-derecho{
+    background-color: #e5e5e5;
+    color: #666666;
+    padding: 1em;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    width: 500px;
+    height: 400px;
+    transition: all 0.2s;
+}
+
+
+textarea.texto-derecho:focus{
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;  
+}
+
+.botones {
+    margin: 2%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+button.btn-encriptar{
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+  background: #100709;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: solid #ffffff 2px;
+}
+
+
+button.btn-encriptar:hover {
+    background: #ff316c;
+    background-image: -webkit-linear-gradient(top, #ff316c, #fca311);
+    background-image: -moz-linear-gradient(top, #ff316c, #fca311);
+    background-image: -ms-linear-gradient(top, #ff316c, #fca311);
+    background-image: -o-linear-gradient(top, #ff316c, #fca311);
+    background-image: linear-gradient(to bottom, #ff316c, #fca311);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.btn-desencriptar{
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    background: #100709;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: solid #ffffff 2px;
+}
+
+
+button.btn-desencriptar:hover {
+    background: #ff316c;
+    background-image: -webkit-linear-gradient(top, #ff316c, #fca311);
+    background-image: -moz-linear-gradient(top, #ff316c, #fca311);
+    background-image: -ms-linear-gradient(top, #ff316c, #fca311);
+    background-image: -o-linear-gradient(top, #ff316c, #fca311);
+    background-image: linear-gradient(to bottom, #ff316c, #fca311);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+div.boton-copiar{
+    margin-left: 50px ;
+    margin-top: 10px;
+}
+
+
+button.copiar{
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    background: #100709;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: solid #ffffff 2px;
+}
+
+
+
+  button.copiar:hover {
+    background: #ff316c;
+    background-image: -webkit-linear-gradient(top, #ff316c, #fca311);
+    background-image: -moz-linear-gradient(top, #ff316c, #fca311);
+    background-image: -ms-linear-gradient(top, #ff316c, #fca311);
+    background-image: -o-linear-gradient(top, #ff316c, #fca311);
+    background-image: linear-gradient(to bottom, #ff316c, #fca311);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+footer{
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    color: #d7d7d7;
+    margin-left: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+a{
+    color: #fca311;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff316c;
+    border-bottom: 2px solid #ff316c;
+}
+
+
+
+
+
+/* animations*/
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

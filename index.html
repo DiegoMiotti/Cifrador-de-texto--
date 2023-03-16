@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+
+
+
+  <title>Encriptador de Texto</title>
+
+</head>
+
+<body class="conteiner">
+
+  <header class="header">
+    <h1 class="typing-titulo">//ENCRIPTADOR DE TEXTO//</h1>
+  </header>
+
+
+  <main class="main">
+    <section class="texto-izquierdo">
+      <textarea id="texto" class="texto-a-encriptar" placeholder="Ingrese su mensaje aqui..." spellcheck="false" maxlength="300" cols="50" rows="10"  ></textarea> 
+     <div class="botones">
+        <button class="btn-encriptar" onclick="btnEncriptar()">ENCRIPTAR</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+      </div>
+      </section>
+
+      <section class="mensaje">
+        <textarea class="texto-derecho" cols="50" rows="10" readonly=»readonly»></textarea> 
+        <div class="boton-copiar">
+          <button class="copiar" onclick="copiar()">COPIAR</button>
+        </div>     
+      </section>
+  </main>
+  <footer class="footer">
+    <h3>
+      <a class="link" href="https://www.aluracursos.com/" target="_blank">ALURA LATAM</a>
+      CHALLENGE ONE - ENCRIPTADOR DE TEXTO - <a class="link" href="https://github.com/DiegoMiotti" target="_blank">DIEGO MIOTTI
+        </a>
+    </h3>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
